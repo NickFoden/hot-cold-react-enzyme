@@ -8,6 +8,7 @@ it('Renders without crashing', () => {
 });
 
 it('Check the count is rendering', () => {
-    const wrapper = shallow(<GuessCount count=15 />);
-    expect(wrapper.prop('count')).toEqual('15');
+	const count = 15;
+    const wrapper = shallow(<GuessCount count={count} />);
+    expect(wrapper.contains(<span id="count">{count}</span>)).toEqual(true);
 });
