@@ -3,7 +3,7 @@ import {shallow, mount} from 'enzyme';
 
 import GuessForm from './guess-form';
 
-it('Renders Guess Form without crashing', () => {
+it('Renders guess-form without crashing', () => {
     shallow(<GuessForm />);
 });
 
